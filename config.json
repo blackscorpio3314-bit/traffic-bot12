@@ -1,0 +1,8 @@
+{
+    "urls": ["https://example.com"],
+    "proxies": [],
+    "countryFocus": "USA",
+    "stayTimeMin": 30,
+    "stayTimeMax": 60,
+    "threads": 2
+}
