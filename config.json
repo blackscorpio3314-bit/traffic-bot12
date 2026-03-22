@@ -7,7 +7,7 @@
     ],
     "proxies": [],
     "countryFocus": "USA",
-    "stayTimeMin": 30,
-    "stayTimeMax": 60,
-    "threads": 2
+    "stayTimeMin": 20,
+    "stayTimeMax": 40,
+    "threads": 5
 }
