@@ -16,6 +16,14 @@ async function runHeadless() {
     console.log(`Targeting URLs: ${config.urls.join(', ')}`);
     console.log(`Using ${config.proxies.length} proxies.`);
     
+    // EXIT TIMER: Auto-exit after 50 minutes to avoid GitHub timeout error
+    const runtimeLimit = 50 * 60 * 1000;
+    setTimeout(() => {
+        console.log('--- RUNTIME LIMIT REACHED (50 min) ---');
+        console.log('Exiting cleanly to allow the next cron job to start.');
+        process.exit(0); 
+    }, runtimeLimit);
+
     const bots = [];
     const totalThreads = config.threads || 2;
 
